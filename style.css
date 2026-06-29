@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 400px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+.top {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  animation: 3s linear 1s slide-in;
+}
+
+.display {
+  height: 70%;
+  width: 95%;
+  border: 1px solid #ffffff;
+  background-color: #333333;
+  border-radius: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #fff;
+  padding-right: 5px;
+  font-size: 40px;
+  letter-spacing: 1.1px;
+  overflow: hidden;
+  outline: none;
+}
+
+.btns {
+  border-top: 1px solid #ffffff;
+  padding: 5px;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    'clear clear clear equal'
+    'nine eight seven plus'
+    'six five four minus'
+    'three two one multiply'
+    'modulus zero divide dot';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+.btns p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid black;
+  color: white;
+}
+
+.btns p:hover {
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+}
+
+.clear {
+  grid-area: clear;
+  background-color: tomato;
+}
+
+.equal {
+  grid-area: equal;
+  background-color: #1d91ff;
+}
+
+.nine {
+  grid-area: nine;
+  background-color: #333333;
+}
+
+.eight {
+  grid-area: eight;
+  background-color: #333333;
+}
+
+.seven {
+  grid-area: seven;
+  background-color: #333333;
+}
+
+.six {
+  grid-area: six;
+  background-color: #333333;
+}
+
+.five {
+  grid-area: five;
+  background-color: #333333;
+}
+
+.four {
+  grid-area: four;
+  background-color: #333333;
+}
+
+.three {
+  grid-area: three;
+  background-color: #333333;
+}
+
+.two {
+  grid-area: two;
+  background-color: #333333;
+}
+
+.one {
+  grid-area: one;
+  background-color: #333333;
+}
+
+.zero {
+  grid-area: zero;
+  background-color: #333333;
+}
+
+.plus {
+  grid-area: plus;
+  background-color: #fc9600;
+}
+
+.minus {
+  grid-area: minus;
+  background-color: #fc9600;
+}
+
+.multiply {
+  grid-area: multiply;
+  background-color: #fc9600;
+}
+
+.dot {
+  grid-area: dot;
+  background-color: #1d91ff;
+}
+
+.divide {
+  grid-area: divide;
+  background-color: #fc9600;
+}
+
+.modulus {
+  grid-area: modulus;
+  background-color: #fc9600;
+}
